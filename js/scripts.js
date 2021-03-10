@@ -15,9 +15,11 @@ function Artwork (artwork, artist, song, tags, color) {
 		container.addClass("artwork")
 
 		var artworkString = "";
-		artworkString += "<img src=" + this.artwork + ">";
-		artworkString += "<cite>" + this.artist + "</cite";
-		artworkString += "<cite>" + this.song + "</cite";
+		artworkString += "<ul>"
+		artworkString += "<li>" + "<img src=" + this.artwork + ">" + "</li>";
+		artworkString += "<li>" + this.artist + "</li>";
+		artworkString += "<li>" + this.song + "</li>";
+		artworkString += "</ul>"
 
 		container.html(artworkString)
 		$(".artworks").prepend(container)
@@ -26,27 +28,27 @@ function Artwork (artwork, artist, song, tags, color) {
 
 var artworks = [
 	new Artwork("img/Bravado.JPG", "Lorde", "Bravado", 
-		["Electropop", "Pop"]),
+		["All","Electropop", "Pop"]),
 	new Artwork("img/Bury_a_Friend.png", "Billie Eillish" , "Bury a Friend", 
-		["Electropop", "Pop"]),
+		["All","Electropop", "Pop"]),
 	new Artwork("img/CryBaby.png", "Melanie Martinez" , "Cry Baby", 
-		["Alternative", "Electropop"]),
+		["All","Alternative", "Electropop"]),
 	new Artwork("img/Death_of_a_Bachelor.png", "Panic! at the Disco" , "Death of a Bachelor", 
-		["Alternative", "Rock", "Pop"]),
+		["All","Alternative", "Rock", "Pop"]),
 	new Artwork("img/Funhouse.png", "P!nk" , "Funhouse", 
-		["Pop", "Rock"]),
+		["All","Pop", "Rock"]),
 	new Artwork("img/LastHope.JPG", "Paramore" , "Last Hope", 
-		["Alternative", "Rock"]),
+		["All","Alternative", "Rock"]),
 	new Artwork("img/LightTunnels.jpg", "Macklemore & Ryan Lewis" , "Light Tunnels", 
-		["Rap"]),
+		["All","Rap"]),
 	new Artwork("img/Love_Gone_Wrong.JPG", "With You." , "Love Gone Wrong", 
-		["Folk"]),
+		["All","Folk"]),
 	new Artwork("img/Masterpiece_Theatre.png", "Marianas Trench" , "Masterpiece Theatre", 
-		["Rock", "Pop"]),
+		["All","Rock", "Pop"]),
 	new Artwork("img/Paramore.png", "Paramore" , "Album", 
-		["Alternative"]),
+		["All","Alternative"]),
 	new Artwork("img/Senorita.png", "Camila Cabello" , "Senorita", 
-		["Pop"])
+		["All","Pop"])
 ]
 
 //global taglist
